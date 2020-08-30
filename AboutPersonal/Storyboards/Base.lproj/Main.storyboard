@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutPersonal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="AboutPersonal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,6 +38,9 @@
                                         <rect key="frame" x="83.5" y="84" width="54" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pU6-Pr-95C"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="k2c-8f-c6M">
                                         <rect key="frame" x="3" y="128" width="215" height="24"/>
@@ -46,11 +49,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <state key="normal" title="Forgot User Name?"/>
+                                                <connections>
+                                                    <action selector="forgotNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALe-cb-j6t"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBz-fW-CKe">
                                                 <rect key="frame" x="129" y="0.0" width="86" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                 <state key="normal" title="Forgot Password?"/>
+                                                <connections>
+                                                    <action selector="forgotPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMt-at-qUv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -60,11 +69,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="qvm-1z-AIf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="NkA-nK-wAo"/>
+                            <constraint firstItem="qvm-1z-AIf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.690625" id="Wg7-Tc-yKu"/>
+                            <constraint firstItem="qvm-1z-AIf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.267606" id="fw4-pA-QVY"/>
                             <constraint firstItem="qvm-1z-AIf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rnX-Ke-gqH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTextField" destination="wDo-bV-h3J" id="dXC-X6-lf0"/>
+                        <outlet property="userNameTextField" destination="yc3-bm-Uf2" id="ioB-MO-GmS"/>
                         <segue destination="Kcy-fA-f1F" kind="presentation" modalPresentationStyle="fullScreen" id="2QT-b9-vdq"/>
                     </connections>
                 </viewController>

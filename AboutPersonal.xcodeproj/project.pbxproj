@@ -15,6 +15,7 @@
 		45820FE524FB71A4009FBF5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45820FE324FB71A4009FBF5B /* LaunchScreen.storyboard */; };
 		45820FF224FB77E5009FBF5B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45820FF124FB77E5009FBF5B /* User.swift */; };
 		45820FF424FB79A7009FBF5B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45820FF324FB79A7009FBF5B /* Default-568h@2x.png */; };
+		45820FF624FB9036009FBF5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45820FF524FB9036009FBF5B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		45820FE624FB71A4009FBF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45820FF124FB77E5009FBF5B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		45820FF324FB79A7009FBF5B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		45820FF524FB9036009FBF5B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = AboutPersonal/ViewControllers/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				45820FDC24FB719F009FBF5B /* ViewController.swift */,
+				45820FF524FB9036009FBF5B /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				45820FF224FB77E5009FBF5B /* User.swift in Sources */,
 				45820FDD24FB719F009FBF5B /* ViewController.swift in Sources */,
 				45820FD924FB719F009FBF5B /* AppDelegate.swift in Sources */,
+				45820FF624FB9036009FBF5B /* LoginViewController.swift in Sources */,
 				45820FDB24FB719F009FBF5B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
