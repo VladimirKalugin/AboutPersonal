@@ -56,15 +56,55 @@
 		45820FD724FB719F009FBF5B /* AboutPersonal */ = {
 			isa = PBXGroup;
 			children = (
-				45820FD824FB719F009FBF5B /* AppDelegate.swift */,
-				45820FDA24FB719F009FBF5B /* SceneDelegate.swift */,
-				45820FDC24FB719F009FBF5B /* ViewController.swift */,
-				45820FDE24FB719F009FBF5B /* Main.storyboard */,
-				45820FE124FB71A4009FBF5B /* Assets.xcassets */,
-				45820FE324FB71A4009FBF5B /* LaunchScreen.storyboard */,
-				45820FE624FB71A4009FBF5B /* Info.plist */,
+				45820FEE24FB728C009FBF5B /* ViewControllers */,
+				45820FF024FB72C7009FBF5B /* Models */,
+				45820FEC24FB71F6009FBF5B /* Storyboards */,
+				45820FED24FB726C009FBF5B /* SupportingFiles */,
+				45820FEF24FB72AC009FBF5B /* Sources */,
 			);
 			path = AboutPersonal;
+			sourceTree = "<group>";
+		};
+		45820FEC24FB71F6009FBF5B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				45820FDE24FB719F009FBF5B /* Main.storyboard */,
+				45820FE324FB71A4009FBF5B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		45820FED24FB726C009FBF5B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				45820FD824FB719F009FBF5B /* AppDelegate.swift */,
+				45820FDA24FB719F009FBF5B /* SceneDelegate.swift */,
+				45820FE624FB71A4009FBF5B /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		45820FEE24FB728C009FBF5B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45820FDC24FB719F009FBF5B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		45820FEF24FB72AC009FBF5B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				45820FE124FB71A4009FBF5B /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		45820FF024FB72C7009FBF5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.goWhites.AboutPersonal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.goWhites.AboutPersonal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
