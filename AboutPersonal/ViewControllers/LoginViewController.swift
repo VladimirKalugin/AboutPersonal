@@ -17,15 +17,18 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        userNameTextField.delegate = self
+        passwordTextField.delegate = self
+        
     }
     
-    
+    // MARK: - Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goGreeting" {
             let tabBarController = segue.destination as! UITabBarController
-            let greetingVC = tabBarController.viewControllers?[0] as! GreetingViewController
+            let greetingVC = tabBarController.viewControllers?.first as? GreetingViewController
             if let text = userNameTextField.text {
-                greetingVC.greeting = text }
+                greetingVC?.greeting = text }
         }
     }
     
@@ -55,6 +58,7 @@ class LoginViewController: UIViewController {
         passwordTextField.text = ""
     }
     
+    // MARK: - Private func
     private func addAlert(title: String, massage: String, style: UIAlertController.Style) {
         let alertController = UIAlertController(title: title, message: massage, preferredStyle: style)
         let action = UIAlertAction(title: "OK", style: .default)
@@ -62,8 +66,24 @@ class LoginViewController: UIViewController {
         self.present(alertController, animated: true)
     }
     
+    // MARK: - TouchesBegan
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
+    }
+}
+
+// MARK: - TextFieldDelegate
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        if textField == userNameTextField {
+            self.passwordTextField.becomeFirstResponder()
+        }
+        if textField == passwordTextField {
+            loginAction(self)
+        }
+        return true
     }
 }
