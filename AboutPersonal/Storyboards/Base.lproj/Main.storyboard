@@ -33,7 +33,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pU6-Pr-95C"/>
+                                            <action selector="loginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="TFf-7Q-jS4"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="k2c-8f-c6M">
@@ -142,7 +142,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vr-BU-Fya">
                                         <rect key="frame" x="0.0" y="52.5" width="288" height="340.5"/>
-                                        <mutableString key="text">Меня зовут Калугин Владимир Святославович. Родился и живу в городе Новосибирск.                              Всю жизнь увлекался различными вещами и тяготел к точным и естественным наукам, так же приуспел в английском языке.                                         Как и многое острочил выбор своей професси когда пошел в ВУЗ, но все же закончил его и сейчас с дипломом на руках постигаю новую и более интересную сферу знаний iOS разработу.                                                     В одно прекрасное утро решил, что стану iOS developer и приобрел полный курс на swiftbook.ru.                                      Алексей, простите что приложение не такое разнообразное, но я завершил осноыной функционал. </mutableString>
+                                        <string key="text">Меня зовут Калугин Владимир Святославович. Родился и живу в городе Новосибирск.                              Всю жизнь увлекался различными вещами и тяготел к точным и естественным наукам, так же приуспел в английском языке.                                         Как и многое острочил выбор своей професси когда пошел в ВУЗ, но все же закончил его и сейчас с дипломом на руках постигаю новую и более интересную сферу знаний iOS разработу.                                                     В одно прекрасное утро решил, что стану iOS developer и приобрел полный курс на swiftbook.ru.                                      Алексей, простите что приложение не такое разнообразное, но я завершил осноыной функционал. </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -211,6 +211,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="A27-48-o1Q"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bDA-KH-erM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

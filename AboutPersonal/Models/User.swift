@@ -6,11 +6,15 @@
 //  Copyright © 2020 myself. All rights reserved.
 //
 
-struct User {
-    let userName: String
-    let userPassword: String
+class User {
+    var name: String = "User"
+    var password: String = "Password"
+    
+    init(name: String, password: String ) {
+        self.name = name
+        self.password = password
+    }
+    
 }
-
-let newUser = User(userName: "User", userPassword: "Password")
 
 

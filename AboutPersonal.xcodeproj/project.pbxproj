@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		45820FD924FB719F009FBF5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45820FD824FB719F009FBF5B /* AppDelegate.swift */; };
 		45820FDB24FB719F009FBF5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45820FDA24FB719F009FBF5B /* SceneDelegate.swift */; };
-		45820FDD24FB719F009FBF5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45820FDC24FB719F009FBF5B /* ViewController.swift */; };
 		45820FE024FB719F009FBF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45820FDE24FB719F009FBF5B /* Main.storyboard */; };
 		45820FE224FB71A4009FBF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45820FE124FB71A4009FBF5B /* Assets.xcassets */; };
 		45820FE524FB71A4009FBF5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45820FE324FB71A4009FBF5B /* LaunchScreen.storyboard */; };
 		45820FF224FB77E5009FBF5B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45820FF124FB77E5009FBF5B /* User.swift */; };
-		45820FF424FB79A7009FBF5B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45820FF324FB79A7009FBF5B /* Default-568h@2x.png */; };
 		45820FF624FB9036009FBF5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45820FF524FB9036009FBF5B /* LoginViewController.swift */; };
 		45820FF824FBC8F9009FBF5B /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45820FF724FBC8F9009FBF5B /* GreetingViewController.swift */; };
 		45820FFA24FC827C009FBF5B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45820FF924FC827C009FBF5B /* UserViewController.swift */; };
@@ -24,13 +22,11 @@
 		45820FD524FB719F009FBF5B /* AboutPersonal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutPersonal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45820FD824FB719F009FBF5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45820FDA24FB719F009FBF5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45820FDC24FB719F009FBF5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45820FDF24FB719F009FBF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45820FE124FB71A4009FBF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45820FE424FB71A4009FBF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45820FE624FB71A4009FBF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45820FF124FB77E5009FBF5B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		45820FF324FB79A7009FBF5B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		45820FF524FB9036009FBF5B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = AboutPersonal/ViewControllers/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		45820FF724FBC8F9009FBF5B /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		45820FF924FC827C009FBF5B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserViewController.swift; path = AboutPersonal/ViewControllers/UserViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -50,7 +46,6 @@
 		45820FCC24FB719F009FBF5B = {
 			isa = PBXGroup;
 			children = (
-				45820FF324FB79A7009FBF5B /* Default-568h@2x.png */,
 				45820FD724FB719F009FBF5B /* AboutPersonal */,
 				45820FD624FB719F009FBF5B /* Products */,
 			);
@@ -98,7 +93,6 @@
 		45820FEE24FB728C009FBF5B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				45820FDC24FB719F009FBF5B /* ViewController.swift */,
 				45820FF524FB9036009FBF5B /* LoginViewController.swift */,
 				45820FF724FBC8F9009FBF5B /* GreetingViewController.swift */,
 				45820FF924FC827C009FBF5B /* UserViewController.swift */,
@@ -181,7 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45820FE524FB71A4009FBF5B /* LaunchScreen.storyboard in Resources */,
-				45820FF424FB79A7009FBF5B /* Default-568h@2x.png in Resources */,
 				45820FE224FB71A4009FBF5B /* Assets.xcassets in Resources */,
 				45820FE024FB719F009FBF5B /* Main.storyboard in Resources */,
 			);
@@ -197,7 +190,6 @@
 				45820FFA24FC827C009FBF5B /* UserViewController.swift in Sources */,
 				45820FF224FB77E5009FBF5B /* User.swift in Sources */,
 				45820FF824FBC8F9009FBF5B /* GreetingViewController.swift in Sources */,
-				45820FDD24FB719F009FBF5B /* ViewController.swift in Sources */,
 				45820FD924FB719F009FBF5B /* AppDelegate.swift in Sources */,
 				45820FF624FB9036009FBF5B /* LoginViewController.swift in Sources */,
 				45820FDB24FB719F009FBF5B /* SceneDelegate.swift in Sources */,

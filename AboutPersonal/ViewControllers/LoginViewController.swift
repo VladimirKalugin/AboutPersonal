@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    let newUser = User(name: "User", password: "Password")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,24 +35,23 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: - IBAction
-    @IBAction func loginAction(_ sender: Any) {
-        if userNameTextField.text != newUser.userName || passwordTextField.text != newUser.userPassword
-        {
-            addAlert(title: "Your login or password isn't correct", massage: "Please, enter valid data", style: .alert)
-            passwordTextField.text = ""
-        }
-        else if userNameTextField.text == newUser.userName && passwordTextField.text == newUser.userPassword
-        {
-            performSegue(withIdentifier: "goGreeting", sender: nil)
-        }
+    
+    
+    @IBAction func loginButton() {
+    if userNameTextField.text != newUser.name || passwordTextField.text != newUser.password {
+               addAlert(title: "Your login or password isn't correct", massage: "Please, enter valid data", style: .alert)
+               passwordTextField.text = ""
+           } else if userNameTextField.text == newUser.name && passwordTextField.text == newUser.password {
+               performSegue(withIdentifier: "goGreeting", sender: nil)
+           }
     }
     
     @IBAction func forgotNameButton(_ sender: Any) {
-        addAlert(title: "Oops!", massage: "Your name is \(newUser.userName)", style: .alert)
+        addAlert(title: "Oops!", massage: "Your name is \(newUser.name)", style: .alert)
     }
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
-        addAlert(title: "Oops!", massage: "Your password is \(newUser.userPassword)", style: .alert)
+        addAlert(title: "Oops!", massage: "Your password is \(newUser.password)", style: .alert)
     }
     
     @IBAction func unwindSegueToLoginSreen(segue: UIStoryboardSegue) {
@@ -77,12 +78,11 @@ class LoginViewController: UIViewController {
 extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
         if textField == userNameTextField {
+            textField.resignFirstResponder()
             self.passwordTextField.becomeFirstResponder()
-        }
-        if textField == passwordTextField {
-            loginAction(self)
+        } else {
+            loginButton()
         }
         return true
     }
