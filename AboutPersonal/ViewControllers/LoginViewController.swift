@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    let newUser = User(name: "User", password: "Password")
+    private let newUser = User.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +38,18 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginButton() {
-    if userNameTextField.text != newUser.name || passwordTextField.text != newUser.password {
-               addAlert(title: "Your login or password isn't correct", massage: "Please, enter valid data", style: .alert)
-               passwordTextField.text = ""
-           } else if userNameTextField.text == newUser.name && passwordTextField.text == newUser.password {
-               performSegue(withIdentifier: "goGreeting", sender: nil)
-           }
+        guard
+            userNameTextField.text == newUser.name,
+            passwordTextField.text == newUser.password
+            else  {
+                self.addAlert(title: "Your login or password isn't correct",
+                              massage: "Please, enter valid data",
+                              style: .alert);
+                self.passwordTextField.text = ""
+                return
+        }
+        performSegue(withIdentifier: "goGreeting", sender: nil)
+        
     }
     
     @IBAction func forgotNameButton(_ sender: Any) {

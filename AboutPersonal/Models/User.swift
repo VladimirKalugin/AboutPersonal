@@ -6,15 +6,13 @@
 //  Copyright © 2020 myself. All rights reserved.
 //
 
-class User {
-    var name: String = "User"
-    var password: String = "Password"
+struct User {
+    var name: String
+    var password: String
     
-    init(name: String, password: String ) {
-        self.name = name
-        self.password = password
+    static func getUserData() -> User {
+        User(name: "User", password: "Password")
     }
-    
 }
 
 
